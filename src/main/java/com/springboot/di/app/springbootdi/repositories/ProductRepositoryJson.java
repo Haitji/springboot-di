@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.springboot.di.app.springbootdi.model.Product;
@@ -15,8 +14,8 @@ public class ProductRepositoryJson implements ProductRepository{
     List<Product> products;
     
 
-    public ProductRepositoryJson() {
-        Resource resource = new ClassPathResource("product.json");//Obtenermos el archivo de products.json
+    public ProductRepositoryJson(Resource resource) {
+        //Resource resource = new ClassPathResource("product.json");//Obtenermos el archivo de products.json
         ObjectMapper objectMapper = new ObjectMapper();//Con el mapper podemos transformar el fichero en un objeto que puede leer Java
         try {
             products = Arrays.asList(objectMapper.readValue(resource.getFile(), Product[].class));//Con el mapper leermos el archivo y lo transformamos en una Lista de Product
