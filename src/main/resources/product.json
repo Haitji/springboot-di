@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Playstation",
+        "id": 1,
+        "price": 125
+    },
+    {
+        "name": "Xbox",
+        "id": 2,
+        "price": 2
+    },
+    {
+        "name": "Chaquetsa",
+        "id": 3,
+        "price": 3
+    },
+    {
+        "name": "Coche",
+        "id": 4,
+        "price": 5
+    },
+    {
+        "name": "Piedra",
+        "id": 5,
+        "price": 6
+    },
+    {
+        "name": "AAAA",
+        "id": 6,
+        "price": 7
+    }
+]
